@@ -1,0 +1,237 @@
+@import './base.css';
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#button{
+  width:80px;
+  padding:8px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #08BDBA;
+  font-weight: bold;
+  color:white;
+}
+.headerRight{
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.profileLine{
+  width:80%;
+  height:80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#profilePhoto{
+  padding:50px; 
+  position:absolute; 
+}
+#profileSvg{
+  position:absolute;
+  width:500px;
+  height:auto;
+}
+
+.profileBlock{
+  text-align: center;
+}
+#subProfile{
+  font-size:25px;
+  text-align: center;
+}
+#profileName{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+}
+#profileBox{
+  border-radius: 50%;
+  background-color:#08BDBA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:200px;
+  height:200px;
+}
+
+.buttonZip{
+  width:330px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.buttonZip button{
+  margin-top:20px;
+  width:140px;
+  height:60px; 
+  border:none;
+  color:white;
+  font-size:20px;
+  font-weight: bold;
+  background-color:rgb(20,20,20);
+  border-radius: 40px;
+}
+#insta{
+  background-color:transparent;
+  color:black;
+  border:4px solid black;
+}
+
+hr{
+  margin-top: 30px;
+}
+.photoAlbum img{
+  width:40%;
+}
+.photoAlbum .flex{
+  align-items: center;
+  margin:50px 0px;
+}
+.albumSvg{
+}
+#title{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size:15px;
+    }
+    #button{
+      width:80px;
+      padding:8px;
+      text-align: center;
+      border-radius: 20px;
+      font-weight: bold;
+      color:white;
+    }
+    .headerRight{
+      width:60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .profileLine{
+      width:100%;
+      height:80vh;
+      display:block;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #profilePhoto{
+      padding:20px;
+      max-width: 230px;
+    }
+    .profileBlock{
+      
+      text-align: center;
+    }
+    #subProfile{
+      font-size:25px;
+      text-align: center;
+    }
+    #profileSvg{
+      width:300px;
+    }
+    .flex{
+      display: flex;
+      width:100%;
+      justify-content:center;
+    }
+    #profileName{
+      font-weight: bold;
+      font-size: 50px;
+      text-align: center;
+    }
+   
+    #profileBox{
+      border-radius: 50%;
+      width:200px;
+      height:200px;
+      margin:30px 0px;
+    }
+    
+    .buttonZip{
+      width:330px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .buttonZip button{
+      margin-top:20px;
+      width:140px;
+      height:60px; 
+      border:none;
+      color:white;
+      font-size:20px;
+      font-weight: bold;
+      background-color:#08BDBA;
+      border-radius: 40px;
+    }
+    #insta{
+      background-color:transparent;
+      color:#08BDBA;
+      border:4px solid #08BDBA;
+    }
+    
+    hr{
+      margin-top: 30px;
+    }
+    .mobileView{
+      display: flex;
+      height:100vh;
+      align-items: center;
+    }
+}
